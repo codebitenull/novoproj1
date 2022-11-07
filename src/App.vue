@@ -1,4 +1,7 @@
 <template>
+  <head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
   <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/OqueSou">O que sou</router-link> |
@@ -6,53 +9,42 @@
     <router-link to="/Hobbies">Hobbies</router-link>
   </nav>
   <router-view/>
-  <footer>
-    <MDBFooter :text="['center', 'lg-start', 'muted']">
-      <section class="mb-4"><!-- Facebook -->
-        <a
-          class="btn btn-outline-light btn-floating m-1"
-          href="#!"
-          role="button"
-          ><MDBIcon iconStyle="fab" icon="facebook-f"
-        /></a>
-        <!-- Twitter -->
-        <a
-          class="btn btn-outline-light btn-floating m-1"
-          href="#!"
-          role="button"
-          ><MDBIcon iconStyle="fab" icon="twitter"
-        /></a>
-        <!-- Google -->
-        <a
-          class="btn btn-outline-light btn-floating m-1"
-          href="#!"
-          role="button"
-          ><MDBIcon iconStyle="fab" icon="google"
-        /></a>
-        <!-- Instagram -->
-        <a
-          class="btn btn-outline-light btn-floating m-1"
-          href="#!"
-          role="button"
-          ><MDBIcon iconStyle="fab" icon="instagram"
-        /></a>
-        <!-- Linkedin -->
-        <a
-          class="btn btn-outline-light btn-floating m-1"
-          href="#!"
-          role="button"
-          ><MDBIcon iconStyle="fab" icon="linkedin-in"
-        /></a>
-        <!-- Github -->
-        <a
-          class="btn btn-outline-light btn-floating m-1"
-          href="#!"
-          role="button"
-          ><MDBIcon iconStyle="fab" icon="github"></MDBIcon
-        ></a>
-      </section>
-    </MDBFooter>
-  </footer>
+  <MDBFooter :text="['center', 'lg-start', 'muted']">
+
+    <section>
+
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+       
+      </div>
+
+      <div>
+        <a href="https://www.facebook.com" class="me-4 text-reset">
+          <i class="fa fa-facebook-official"></i>
+  
+        </a>
+        <a href="" class="me-4 text-reset">
+
+          <MDBIcon iconStyle="fab" icon="fab fa-android"></MDBIcon>
+        </a>
+        
+        <a href="" class="me-4 text-reset">
+          <MDBIcon iconStyle="fab" icon="google"></MDBIcon>
+        </a>
+
+        <a href="https://www.instagram.com" class="me-4 text-reset">
+          <i class="fa fa-instagram"></i>
+        </a>
+
+
+        <a href="https://www.github.com" class="me-4 text-reset">
+          <i class="fa fa-github"></i>
+    
+        </a>
+      </div>
+    </section>
+
+  </MDBFooter>
 </template>
 
 <style>
@@ -86,3 +78,22 @@ footer {
 
 
 </style>
+<script>
+
+import {
+  MDBFooter,
+  MDBIcon
+} from 'mdb-vue-ui-kit';
+
+
+
+export default {
+
+components: {
+ 
+  MDBFooter,
+  MDBIcon,
+  
+}
+}
+</script>
